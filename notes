@@ -1,0 +1,126 @@
+friends =["aa","bb","cc"]
+
+for friend in friends:
+    print("hello",friend)
+
+print(" ")
+print(" ")
+#######################
+num = [53,45,34,56,23,6]
+largest= num[0]
+for n in num:
+    if largest<n:
+       largest=n
+print("largest =",largest)
+
+print(" ")
+print(" ")
+#########################
+x=print("length= ",len("hello")) 
+
+x="hello#"
+i=0
+while i < len(x):
+    print(x[i])
+    i=i+1
+
+print(" ")
+print(" ")   
+#########################
+print()
+x="hello#"
+i=0
+for i in x: 
+    print(i)
+
+print(" ")
+print(" ")
+#######################
+
+s=" hello world"
+print(s[0:6])   #not [0,6) not inlcudes the 6th index
+print(s[6:])
+print(s[:6])
+print(s[:])
+
+
+print(" ")
+print(" ")
+########################
+s="hello"
+print('o' in s)
+print('ol' in s)
+if 'l' in s:
+    print("found it")
+
+
+print(" ")
+print(" ")
+################3
+
+word="apple"
+
+if word=="banana":
+    print("both equal")
+elif word<"banana":
+    print(word,"comes before banana")
+elif word>"banana":
+    print("banana comes before ",word)    
+
+print(" ")
+print(" ")
+###############
+x="world"
+z=x.upper()
+print(z)
+
+print(" ")
+print(" ")
+###############
+old="hello world"
+new=old.replace("world","universe")
+print(old)
+
+
+##########3333
+old="   hello workld    "
+print(old)
+print(old.strip()) ##strip == delete spaces
+
+
+
+##########3
+line='please say hi'
+print(line.startswith('p'))  #true 
+
+#####
+email= "babish@aastu.com sat jan"
+s=email.find("@") #finds the index of the char
+print(s)
+
+h=email.find(" ",s)
+print(h)
+dis= email[s+1:h]
+print(dis)
+
+#################
+print(dir(dict()))
+
+#################
+d={'a':10,'b':2}
+print(d.items())# gives tupels
+
+#################
+print(" ")
+print(" ")
+
+d={'c':10,'b':2}
+print(sorted(d.items()))# gives tupels
+
+##################
+print(" ")
+print(" ")
+x = range(3, 20, 2)     
+        # start,end,increment
+for n in x:
+  print(n)
