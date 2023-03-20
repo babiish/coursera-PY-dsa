@@ -1,0 +1,25 @@
+name = input("Enter file:--")
+if len(name) < 1:
+    name = "mbox-short.txt"
+handle = open(name)
+senders=dict()
+
+for line in handle:
+    if line.startswith('From'):
+        words=line.split()
+       	secondword=words[1]
+        senders[secondword]= senders.get(secondword,0)+1
+            
+maxword=None
+maxcount=None
+
+for k,v in senders.items():
+        if maxcount is None or v > maxcount:
+            maxword= k
+            maxcount= v
+            
+print(maxword, maxcount)        
+    
+    
+    
+
